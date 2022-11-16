@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Rotate_and_Print(arr,d,n)
+{
+    
+    var temp=new Array(n);
+    
+    let k = 0;
+
+   
+    
+    for (let i = d; i < n; i++) {
+        temp[k] = arr[i];
+        k++;
+    }
+
+    
+    for (let i = 0; i < d; i++) {
+        temp[k] = arr[i];
+        k++;
+    }
+    
+    for (let i = 0; i < n; i++) {
+        console.log(temp[i]+" ");
+    }
+}
+
+let arr = [ 1, 2, 3, 4, 5, 6, 7 ];
+let n = arr.length;
+let d = 2; 
+Rotate_and_Print(arr, d, n);
+
+
+    </script>
+
+</body>
+</html>
